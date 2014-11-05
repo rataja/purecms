@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * This file is part of the PureCMS Framework
+ * Copyright (c) 2014 Martin Ratajský (Rataja)
+ */
+
 namespace Rataja\Purecms\Utils;
 
 class Counter
@@ -55,7 +60,7 @@ class Counter
      */
     public function isEven()
     {
-	return $this->counter % 2 == 0 ? true : false;
+	return $this->counter % 2 === 0;
     }
 
     /**
@@ -64,7 +69,7 @@ class Counter
      */
     public function isOdd()
     {
-	return $this->counter % 2 != 0 ? true : false;
+	return $this->counter % 2 === 0;
     }
 
 }
