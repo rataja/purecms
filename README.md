@@ -1,2 +1,2 @@
-cms
+Purecms framework
 ===
