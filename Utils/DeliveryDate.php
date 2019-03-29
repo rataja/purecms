@@ -36,7 +36,6 @@ class DeliveryDate {
         $this->date = $date;
         $this->addWorkingDays = $addWorkingDays;
         $this->setHolidays();
-        var_dump($this->holidayDates);
     }
 
     private function setHolidays() {
@@ -104,9 +103,9 @@ class DeliveryDate {
             $temp = $next1WD;
         }
 
-        $next5WD = date("d.m.Y", $temp);
+        $nextWD = date("d.m.Y", $temp);
 
-        return $next5WD;
+        return $nextWD;
     }
 
 }
